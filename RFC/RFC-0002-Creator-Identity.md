@@ -112,7 +112,49 @@ These invariants are non-negotiable within the scope of this RFC. Any future arc
 
 ---
 
-## 10. Future Specialization
+## 10. Lifecycle
+
+### Purpose
+
+This section specifies Lifecycle as an aspect of the Identity specification, in accordance with RFC-0008. Lifecycle SHALL NOT be construed as an Entity, a Relationship, a Boundary, or an independent architectural primitive.
+
+### Valid States
+
+Identity SHALL occupy exactly one lifecycle state: Continuous.
+
+An Identity instance SHALL remain in the Continuous state for the entire duration that the Creator it belongs to exists. No preliminary or intermediate state SHALL precede it.
+
+### Valid Transitions
+
+The only valid transition is Deliberate Evolution, defined as a transition from the Continuous state to itself.
+
+Deliberate Evolution SHALL represent the intentional change described in Section 4. It SHALL NOT be interpreted as an exit from the Continuous state.
+
+No transition to any state other than Continuous SHALL be considered valid.
+
+### Lifecycle Invariants
+
+The following invariants apply in addition to those stated in Section 9:
+
+- Identity SHALL remain in the Continuous state at all times.
+- A Deliberate Evolution transition SHALL return Identity to the Continuous state.
+- A change not attributable to a deliberate, intentional act, as described in Section 4, SHALL NOT be considered a valid lifecycle transition.
+
+### Terminal Conditions
+
+No terminal state is defined for Identity within the scope of this RFC.
+
+Identity's continuity SHALL NOT terminate while the Creator it belongs to exists. Any condition beyond that point is out of scope for this RFC.
+
+### Cross-Entity Constraints
+
+Where this Lifecycle specification references another entity, it SHALL use only the canonical relationship vocabulary established by RFC-0006.
+
+Memory informs Identity's Deliberate Evolution, consistent with Section 5. This relationship SHALL NOT be interpreted as a causal dependency between the lifecycles of Memory and Identity.
+
+---
+
+## 11. Future Specialization
 
 Later RFCs may elaborate further on Identity — for instance, describing in greater depth how Identity relates to specific mechanisms of continuity, or how intentional evolution is recognized and distinguished from drift in particular circumstances.
 

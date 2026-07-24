@@ -1,5 +1,17 @@
 # CreatorOS Architecture Strategy
 
+## Document Status
+
+| Attribute | Value |
+|-----------|-------|
+| Classification | Strategic Architecture Document |
+| Status | Living |
+| Owner | Architecture Board |
+| Scope | Strategic evolution of CreatorOS |
+| Review Cycle | Updated after each major architectural milestone |
+
+Among the repository's governing documents, this is the only strategic document intentionally expected to evolve throughout the project's lifetime — where the Manifesto, Constitution, and Principles are built to remain valid indefinitely without revision, this document is designed to be updated as the project advances through its phases.
+
 - **Status:** Living document
 - **Author:** Architecture Board
 - **Scope:** The strategic evolution of CreatorOS architecture, from concept to implementation
@@ -19,6 +31,70 @@ This document describes the strategic evolution of CreatorOS from concept to imp
 This document is expected to evolve as the project advances. Unlike the Manifesto or Constitution, which are designed to remain valid indefinitely without revision, this document contains sections whose entire purpose is to track where the project currently stands — and those sections are expected to be updated as the project moves forward. Section 8 draws the distinction between what is expected to remain stable here and what is expected to change.
 
 This document also serves a coordinating function that no single RFC or governance document is positioned to serve on its own. An RFC records a specific decision; the Constitution records what may never be compromised; the Principles record how to choose among valid options. None of these, individually, is meant to describe how all of these pieces fit together across time, or to say where the project stands relative to its full intended trajectory. This document exists to fill precisely that gap — to be the one place a reader can go to understand the whole arc of the project, rather than needing to reconstruct it from the accumulated set of individual decisions.
+
+---
+
+## Document Hierarchy
+
+This document occupies a specific place within the repository's overall hierarchy of authority, connecting the purpose-level documents above it to the decision-level documents below it:
+
+MANIFESTO
+
+↓
+
+CONSTITUTION
+
+↓
+
+PRINCIPLES
+
+↓
+
+ARCHITECTURE_STRATEGY
+
+↓
+
+RFC
+
+↓
+
+ADR
+
+↓
+
+TECH
+
+↓
+
+Implementation
+
+This document does not replace any of these documents. It does not restate the Manifesto's purpose, the Constitution's constraints, or the Principles' guidance, and it does not record decisions in the way RFCs and ADRs do. Instead, it connects them into a coherent strategic progression — showing how the commitments established above it are carried forward into the specific decisions and technical work recorded below it, and where the project currently stands along that progression.
+
+---
+
+## Using This Document
+
+Different readers arrive at this repository with different immediate needs, and this document is written to serve all of them without requiring any of them to read the entire repository before finding their footing.
+
+**Architects** should use this document to understand the current phase of work, the lifecycle a proposed change must pass through, and where a new architectural concept fits relative to what has already been established as stable.
+
+**Engineers** should use this document to understand why architecture precedes implementation in this project, and to identify which phase of the lifecycle current work belongs to, so that implementation is not attempted ahead of the architecture it depends on.
+
+**Contributors** should use this document as an entry point for understanding the project's overall trajectory before engaging with any specific RFC, ADR, or technical specification — it provides the context that makes those individual documents easier to place correctly.
+
+**AI assistants** should use this document consistently with the role and limits defined in `AGENTS.md`, treating it as an orientation document rather than as a source of new architectural authority, and should defer to the Constitution and Principles wherever this document's strategic framing and those documents' constraints might appear to diverge.
+
+The recommended reading order for anyone new to this repository is:
+
+1. Manifesto
+2. Constitution
+3. Principles
+4. Architecture Strategy
+5. Relevant RFCs
+6. ADRs
+7. Technical Specifications (when available)
+
+This order exists because each document depends on the ones before it to be correctly understood. Reading the Constitution before the Manifesto risks encountering constraints without knowing the purpose they protect; reading RFCs before this document risks encountering individual decisions without the strategic context that explains how they fit into the project's overall progression. Following the order above ensures that each document is read with the foundation it assumes already in place.
 
 ---
 
@@ -162,6 +238,14 @@ No change skips a stage in this lifecycle, regardless of how minor it may appear
 
 ## 7. Current Project State
 
+| Area | Status |
+|------|--------|
+| Vision | Complete |
+| Foundation | Frozen |
+| Domain Architecture | In Progress |
+| Technical Architecture | Not Started |
+| Implementation | Not Started |
+
 **Current Phase.** The project is in Phase 3, Domain Architecture, actively extending the domain vocabulary beyond the entities established during the Foundation phase.
 
 **Completed Milestones.** The Vision phase and the Foundation Architecture phase are both complete. The governing purpose documents, the core domain entities, and the canonical relationship and boundary models are all established and considered stable.
@@ -174,6 +258,18 @@ A qualitative account is preferred over a numeric one deliberately. A percentage
 
 ---
 
+## Next Milestone
+
+**Current Objective.** Complete the Project domain model.
+
+**Success Criteria.** Project entity approved through the Architecture Review Process.
+
+**Next Planned Milestone.** Artifact domain model.
+
+This section intentionally changes over time. It is expected to be updated as each milestone is reached, replacing the completed objective with the next one in sequence, consistent with the dynamic nature of this document described in Section 8.
+
+---
+
 ## 8. Living Document
 
 This document intentionally evolves. It is written to accommodate change in its account of the project's current standing, while remaining fixed in its account of the project's overall strategy and philosophy.
@@ -181,6 +277,8 @@ This document intentionally evolves. It is written to accommodate change in its 
 **Stable Sections.** Sections 1 through 4 and Section 6 — Purpose, Vision, Development Philosophy, Architecture Lifecycle, and the Architecture Review Process — describe the enduring shape of how CreatorOS is developed. These sections should almost never change, and any change to them should be treated with the same seriousness as a change to the Constitution or Principles.
 
 **Dynamic Sections.** Sections 5 and 7 — Project Phases and Current Project State — describe where the project currently stands. These sections are expected to change throughout the life of the project, as phases complete, as new phases begin, and as the project's status shifts. Section 9, the Decision Log, is dynamic by design, growing over time as further milestones are recorded.
+
+**Update Policy.** Stable sections change only through exceptional architectural review, applied with the same seriousness as a change to the Constitution or Principles. Operational sections change after major milestones, updated to reflect the phase and status the project has actually reached rather than the one anticipated at the time of the previous update. The Decision Log grows over time, with new entries added as milestones are reached and no existing entry removed or rewritten. Current State — the Next Milestone section and the status table and prose in Section 7 — is expected to evolve continuously, remaining the most frequently updated part of this document as the project advances.
 
 ---
 

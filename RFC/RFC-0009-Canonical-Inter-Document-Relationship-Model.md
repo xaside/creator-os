@@ -1,6 +1,6 @@
 # RFC-0009: Canonical Inter-Document Relationship Model
 
-- **Status:** Draft
+- **Status:** Accepted
 - **Author:** Architecture Board
 - **Scope:** Establishes the architectural separation between Document Authority and Document Relationships
 

@@ -147,6 +147,57 @@ Architecture Consistency Review.
 
 ---
 
+## AQ-0003
+
+### Title
+
+Guidance for Selecting `contains` vs `organizes`
+
+### Status
+
+Open
+
+### Category
+
+Relationship Model
+
+### Raised During
+
+Architecture Review of RFC-0006
+
+### Description
+
+RFC-0006 clearly defines the semantics of the `contains` and `organizes` relationships.
+
+- `contains` describes conceptual scope;
+- `organizes` describes structural organization without conceptual containment.
+
+For the current domain model, this distinction is sufficient and does not create architectural ambiguity. All current uses of these relationships in RFC-0002 through RFC-0005 are unambiguous and require no change.
+
+However, as the domain model is extended further, additional guidance may become necessary for choosing between these two relationships when designing new entities.
+
+This question concerns not the definition of the relationships, but the consistency of their application in future RFCs.
+
+### Why It Matters
+
+As CreatorOS evolves, new entities and new connections between them will be introduced.
+
+Having shared guidance for choosing between `contains` and `organizes` could improve the consistency of future architectural decisions without changing the existing relationship model.
+
+### Current Assessment
+
+Not an architectural issue.
+
+Does not require a change to RFC-0006.
+
+Does not affect the acceptance of RFC-0006.
+
+### Possible Resolution
+
+If future domain entities require a choice between `contains` and `organizes`, the Architecture Board may prepare separate guidance with practical selection criteria, or may determine that the existing definitions are sufficient.
+
+---
+
 ## Review Principles
 
 A new Architecture Question should be created only when all of the following are true:

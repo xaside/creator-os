@@ -13,7 +13,7 @@ This repository is the single source of truth for the CreatorOS ecosystem. It ex
 |---|---|
 | [`AGENTS.md`](AGENTS.md) | Rules of engagement for AI agents and contributors working in this repository. |
 | [`MANIFESTO.md`](MANIFESTO.md) | The philosophy and intent behind CreatorOS. |
-| [`PRINCIPLES.md`](PRINCIPLES.md) | The engineering and architectural principles the project commits to. |
+| [`PRINCIPLES/PRINCIPLES.md`](PRINCIPLES/PRINCIPLES.md) | The engineering and architectural principles the project commits to. |
 | [`LICENSE`](LICENSE) | Licensing terms for this repository. |
 | [`CONSTITUTION/`](CONSTITUTION/README.md) | The governing rules of the project — the highest authority document set. |
 | [`RFC/`](RFC/README.md) | Requests for Comments — proposals for architectural change. |

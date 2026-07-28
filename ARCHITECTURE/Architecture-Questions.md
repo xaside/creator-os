@@ -1,12 +1,18 @@
 # Architecture Questions
 
+- **Status:** Living
+- **Owner:** Architecture Board
+- **Scope:** Tracks unresolved architectural questions discovered during architecture review.
+
 This document is the canonical registry of architecture questions discovered during architecture reviews. It exists to track unresolved architectural questions that deserve future attention, without treating them as confirmed defects in the architecture as it currently stands.
 
 An Architecture Question is not an architecture defect. Recording one does not invalidate any accepted RFC, and no entry in this registry carries the authority to override or supersede an accepted architectural decision.
 
-An Architecture Question represents uncertainty or an opportunity to improve architectural consistency — a place where the existing architecture admits more than one reasonable reading, or where a wording choice could, in principle, be sharpened. It is not a backlog item, an implementation task, or a substitute for the RFC or ADR process.
+An Architecture Question represents uncertainty or an opportunity to clarify architectural consistency — a place where the existing architecture admits more than one reasonable reading, or where a wording choice could, in principle, be sharpened. It is not a backlog item, an implementation task, or a substitute for the RFC or ADR process.
 
 An Architecture Question should be resolved during an Architecture Consistency Review or by a future RFC revision, following the same review process established elsewhere in this repository. This document tracks the question until that resolution occurs; it does not resolve anything on its own.
+
+Every Architecture Question must reference the RFC(s) or architectural review from which it originated. This is a governance requirement of the registry itself, not a property of any individual question.
 
 This document is not an RFC, an ADR, technical debt, an implementation backlog, or a GitHub issue tracker. It is maintained as a living registry, updated as questions are raised, reviewed, and closed.
 
@@ -38,6 +44,28 @@ Closed
 
 **Closed.** The decision has been incorporated into the architecture, and the question requires no further tracking.
 
+A Closed question should record how it was resolved, using the following fields:
+
+Resolution:
+
+Closed In:
+
+For example:
+
+Resolution:
+Clarified by Architecture Consistency Review
+
+Closed In:
+RFC-0012
+
+or
+
+Resolution:
+Resolved by RFC Revision
+
+Closed In:
+RFC-0018
+
 ---
 
 ## Resolution Types
@@ -51,6 +79,15 @@ An Architecture Question may be resolved in one of the following ways:
 - Superseded by later architecture.
 
 The resolution type is recorded against the question once it reaches Resolved status, and the question is moved to Closed once that resolution has been reflected in the relevant architecture.
+
+---
+
+## Identifier Rules
+
+- Architecture Question identifiers are permanent.
+- Identifiers are never reused.
+- Closed questions remain in this document for historical traceability.
+- New identifiers are assigned sequentially.
 
 ---
 

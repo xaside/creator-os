@@ -34,6 +34,8 @@ Each major document in this repository answers a distinct question, at a distinc
 
 **PRINCIPLES** answers *how to choose between valid architectural options*. It must not define immutable constraints — that is constitutional territory — and must not describe implementation techniques. Its authority operates entirely within constitutional boundaries.
 
+**VISION** is introduced as a document category by RFC-0010, at the hierarchy position established there. RFC-0011 defines Vision's architectural role, responsibilities, boundaries, relationships, and evolution — it does not redefine Vision's position in this hierarchy or the Authority Model this hierarchy expresses.
+
 **AGENTS** answers *how work is performed within this repository*. It must not introduce architecture, philosophy, or product concepts; its subject is process and role, not substance.
 
 **RFC** answers *what architectural change is being proposed and why*. It must not record a decision as though it were already settled, and must not contain implementation code. Its authority is provisional until it results in acceptance.
@@ -92,7 +94,7 @@ Naming exists to serve navigation and canonical reference above all else. A name
 
 A new contributor, human or otherwise, should read this repository in the order its authority is established, not in whatever order files happen to be encountered.
 
-The recommended path begins with the root `README.md`, for orientation, followed by `MANIFESTO.md`, to understand why CreatorOS exists. From there, `CONSTITUTION/CONSTITUTION.md` establishes what may never be compromised, and `PRINCIPLES/PRINCIPLES.md` establishes how choices are made within that boundary. `AGENTS.md` explains how work is actually performed. Only after this foundation should a contributor proceed to `RFC/` and `ADR/`, where the specific architectural decisions built on top of that foundation are recorded, and finally to `docs/` for supporting material.
+The recommended path begins with the root `README.md`, for orientation, followed by `MANIFESTO.md`, to understand why CreatorOS exists. From there, `CONSTITUTION/CONSTITUTION.md` establishes what may never be compromised, and `PRINCIPLES/PRINCIPLES.md` establishes how choices are made within that boundary. `VISION/README.md`, the category introduced by RFC-0010, follows next. `AGENTS.md` explains how work is actually performed. Only after this foundation should a contributor proceed to `RFC/` and `ADR/`, where the specific architectural decisions built on top of that foundation are recorded, and finally to `docs/` for supporting material.
 
 This order is not arbitrary. It mirrors the authority hierarchy defined in Section 3: a reader who understands the highest-authority documents first will correctly interpret everything that follows.
 

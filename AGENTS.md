@@ -66,13 +66,16 @@ Highest authority first:
 1. MANIFESTO
 2. CONSTITUTION
 3. PRINCIPLES
-4. AGENTS
-5. RFC
-6. ADR
-7. Documentation
-8. Implementation
+4. VISION
+5. AGENTS
+6. RFC
+7. ADR
+8. Documentation
+9. Implementation
 
 If documents conflict, the higher authority prevails. A lower-ranked document that contradicts a higher one is in error and must be corrected, not treated as a special case. Surface the conflict rather than resolving it silently in favor of whichever document happens to be easier to edit.
+
+This hierarchy defines document precedence for conflict resolution uniformly across every category listed, including categories such as VISION whose fuller definition is completed by a later RFC. No category is exempt from it, and no RFC — including one that later elaborates a category already listed here — may introduce an exception to it.
 
 ---
 

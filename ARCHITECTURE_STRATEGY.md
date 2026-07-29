@@ -50,6 +50,10 @@ PRINCIPLES
 
 ↓
 
+VISION
+
+↓
+
 ARCHITECTURE_STRATEGY
 
 ↓
@@ -89,10 +93,11 @@ The recommended reading order for anyone new to this repository is:
 1. Manifesto
 2. Constitution
 3. Principles
-4. Architecture Strategy
-5. Relevant RFCs
-6. ADRs
-7. Technical Specifications (when available)
+4. Vision
+5. Architecture Strategy
+6. Relevant RFCs
+7. ADRs
+8. Technical Specifications (when available)
 
 This order exists because each document depends on the ones before it to be correctly understood. Reading the Constitution before the Manifesto risks encountering constraints without knowing the purpose they protect; reading RFCs before this document risks encountering individual decisions without the strategic context that explains how they fit into the project's overall progression. Following the order above ensures that each document is read with the foundation it assumes already in place.
 

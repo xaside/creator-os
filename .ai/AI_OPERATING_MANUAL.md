@@ -35,6 +35,7 @@ This manual does not restate the project's mission, architecture philosophy, dec
 - [`MANIFESTO.md`](../MANIFESTO.md) — why CreatorOS exists
 - [`CONSTITUTION/CONSTITUTION.md`](../CONSTITUTION/CONSTITUTION.md) — what may never be compromised
 - [`PRINCIPLES/PRINCIPLES.md`](../PRINCIPLES/PRINCIPLES.md) — how to choose among valid architectural options
+- [`VISION/README.md`](../VISION/README.md) — shared context and vocabulary (category introduced by RFC-0010; defined by RFC-0011)
 - [`ARCHITECTURE_STRATEGY.md`](../ARCHITECTURE_STRATEGY.md) — the architecture lifecycle and current project phase
 - [`AGENTS.md`](../AGENTS.md) — roles, decision hierarchy, and repository rules
 - `RFC/` and `ADR/` — specific architectural decisions
